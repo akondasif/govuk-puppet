@@ -595,5 +595,5 @@ mongodb::s3backup::backup::s3_bucket_daily: 'govuk-mongodb-backup-s3-daily-produ
 
 router::assets_origin::whitehall_uploaded_assets_routes:
   - '/government/placeholder'
-  - '/government/uploads/system/uploads/attachment_data/file/'
+  - '~ ^/government/uploads/system/uploads/attachment_data/file/[0-9]+/.*/preview$'
   - '/government/uploads/uploaded/hmrc/'
